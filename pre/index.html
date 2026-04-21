@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cosa succede al cervello quando si mangia miele a digiuno?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Nunito',sans-serif;background:#0b0b0b;color:#ccc;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit}
+
+/* HERO */
+.hero{position:relative;width:100%;max-height:380px;overflow:hidden}
+.hero img{width:100%;height:380px;object-fit:cover;cursor:pointer}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(transparent 15%,#0b0b0b 95%)}
+
+/* CONTAINER */
+.w{max-width:620px;margin:0 auto;padding:0 18px}
+
+/* HEADLINE */
+.hl{padding:10px 0 6px;text-align:center}
+.hl .cat{display:inline-block;font-size:8px;font-weight:600;letter-spacing:2.5px;text-transform:uppercase;color:#d4a040;background:rgba(212,160,64,.08);padding:4px 14px;border-radius:3px;border:1px solid rgba(212,160,64,.15);margin-bottom:8px}
+.hl h1{font-family:'Playfair Display',serif;font-size:23px;line-height:1.3;color:#fff}
+.hl h1 em{color:#d4a040;font-style:normal}
+.hl .lead{font-size:13px;color:#888;font-weight:300;margin-top:5px;line-height:1.6}
+
+/* CTA TOP */
+.cta-main{margin:14px 0;padding:20px;background:linear-gradient(135deg,#d4a040,#a87a28);border-radius:10px;text-align:center;box-shadow:0 8px 35px rgba(212,160,64,.15)}
+.cta-main h2{font-family:'Playfair Display',serif;font-size:16px;color:#0b0b0b;font-weight:400;margin-bottom:3px;line-height:1.35}
+.cta-main p{font-size:11px;color:rgba(10,10,10,.5);margin-bottom:10px;font-weight:300}
+.btn-main{display:inline-block;background:#0b0b0b;color:#d4a040;padding:13px 44px;font-size:14px;font-weight:600;text-decoration:none;border-radius:6px;transition:all .25s;box-shadow:0 4px 16px rgba(0,0,0,.4);letter-spacing:.3px}
+.btn-main:hover{background:#fff;color:#0b0b0b;transform:translateY(-2px)}
+.cta-main small{display:block;margin-top:5px;font-size:7.5px;color:rgba(10,10,10,.28)}
+
+/* TEXT BLOCKS */
+.tx{padding:10px 0}
+.tx p{font-size:14px;color:#bbb;font-weight:300;line-height:1.85;margin-bottom:11px}
+.tx strong{color:#fff;font-weight:500}
+.tx em{color:#d4a040;font-style:normal;font-weight:400}
+
+/* QUESTION BLOCK */
+.qblock{text-align:center;padding:6px 0;margin:4px 0}
+.qblock h3{font-family:'Playfair Display',serif;font-size:18px;color:#fff;font-weight:400;line-height:1.35}
+.qblock h3 em{color:#d4a040;font-style:normal}
+
+/* IMAGE + TESTIMONIAL */
+.img-card{margin:14px 0;border-radius:8px;overflow:hidden;position:relative}
+.img-card img{width:100%;cursor:pointer;transition:transform .3s}.img-card img:hover{transform:scale(1.02)}
+.img-card .ov{position:absolute;bottom:0;left:0;right:0;padding:14px 16px;background:linear-gradient(transparent,rgba(0,0,0,.88) 35%)}
+.img-card .qt{font-family:'Playfair Display',serif;font-size:13.5px;color:#eee;font-style:italic;line-height:1.55;margin-bottom:3px}
+.img-card .nm{font-size:9.5px;color:#d4a040;font-weight:500}
+
+/* REVEAL LIST */
+.rl{margin:14px 0;background:#111;border-radius:8px;overflow:hidden;border:1px solid #1e1e1e}
+.rl-title{padding:11px 16px;font-family:'Playfair Display',serif;font-size:13.5px;color:#d4a040;border-bottom:1px solid #1e1e1e}
+.rl-item{padding:9px 16px;border-bottom:1px solid #181818;display:flex;gap:10px;align-items:flex-start}
+.rl-item:last-child{border-bottom:none}
+.rl-dot{color:#d4a040;font-size:12px;flex-shrink:0;margin-top:2px}
+.rl-txt{font-size:12.5px;color:#bbb;font-weight:300;line-height:1.55}
+.rl-txt strong{color:#fff;font-weight:500}
+
+/* HIGHLIGHT BOX */
+.hbox{margin:14px 0;padding:14px 16px;border-left:3px solid #d4a040;background:#111;border-radius:0 6px 6px 0}
+.hbox p{font-family:'Playfair Display',serif;font-size:13.5px;color:#ddd;font-style:italic;line-height:1.6}
+
+/* CTA BOTTOM */
+.cta-end{margin:14px 0;padding:18px;background:#111;border-radius:8px;text-align:center;border:1px solid #d4a040}
+.cta-end h3{font-family:'Playfair Display',serif;font-size:15px;color:#fff;margin-bottom:3px;font-weight:400}
+.cta-end p{font-size:10.5px;color:#777;margin-bottom:10px;font-weight:300}
+.cta-end .btn-main{background:#d4a040;color:#0b0b0b}
+.cta-end .btn-main:hover{background:#fff;color:#0b0b0b}
+.cta-end small{display:block;margin-top:5px;font-size:7.5px;color:#555}
+
+/* DISCLAIMER */
+.disc{font-size:8px;color:#555;margin:14px 0;padding:10px 12px;background:#0d0d0d;border-radius:4px;line-height:1.6;border:1px solid #181818}
+
+/* FOOTER */
+footer{padding:14px 18px 28px;text-align:center;font-size:8px;color:#444}
+footer a{color:#d4a040;text-decoration:none}footer a:hover{text-decoration:underline}
+
+@media(max-width:600px){
+.hl h1{font-size:19px}
+.qblock h3{font-size:16px}
+.cta-main h2{font-size:14px}
+.hero img{height:280px}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+<a href="https://lp.hyperelitevendas.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/mem_italy3-honey-mediterranean-dark-XQhrfYiZP9ALwCADGtfVf3.webp" alt="Miele dorato in ciotola di ceramica italiana"></a>
+<div class="hero-ov"></div>
+</section>
+
+<div class="w">
+
+<!-- HEADLINE -->
+<div class="hl">
+<span class="cat">Salute &middot; Memoria &middot; 2026</span>
+<h1>Cosa succede al cervello quando si mangia <em>miele a digiuno?</em></h1>
+<p class="lead">La storia di una nonna della Costiera Amalfitana che ha sorpreso tutta l'Italia.</p>
+</div>
+
+<!-- CTA TOP -->
+<div class="cta-main">
+<h2>&#9654; Guarda il video che spiega tutto</h2>
+<p>Come il miele agisce sulla memoria — e perché va consumato proprio così</p>
+<a href="https://lp.hyperelitevendas.shop/preclick" class="btn-main">Guarda il video &rarr;</a>
+<small>Contenuto informativo gratuito · 3 minuti</small>
+</div>
+
+<!-- TEXT -->
+<div class="tx">
+<p>Immagini di entrare in cucina e <strong>non ricordare perché ci sei entrato.</strong> Di incontrare un vecchio amico e <strong>non riuscire a ricordare il suo nome.</strong> Di posare gli occhiali e <strong>dimenticare dove li hai messi dopo cinque minuti.</strong></p>
+
+<p>La maggior parte delle persone pensa: <strong>„È l'età, non c'è niente da fare."</strong></p>
+
+<p>Ma e se <em>non fosse tutta la verità?</em></p>
+</div>
+
+<!-- QUESTION -->
+<div class="qblock">
+<h3>E se il declino della memoria <em>non dipendesse solo dall'età?</em></h3>
+</div>
+
+<!-- TEXT -->
+<div class="tx">
+<p>Una <strong>nonna della Costiera Amalfitana</strong> ha fatto una scoperta sorprendente. Ha 68 anni e aveva notato che la sua memoria <strong>peggiorava di mese in mese.</strong></p>
+
+<p>Poi un <strong>vecchio apicoltore</strong> del paese le ha raccontato di un'antica ricetta — una <em>miscela di miele</em> che le <strong>nonne della costiera</strong> preparano da generazioni ogni mattina.</p>
+
+<p>Non ci credeva. Ma <strong>l'ha provata.</strong> E quello che è successo dopo — <em>non se lo aspettava.</em></p>
+</div>
+
+<!-- QUESTION -->
+<div class="qblock">
+<h3>Ma perché proprio <em>il miele?</em><br>E perché non basta <em>mangiarlo da solo?</em></h3>
+</div>
+
+<!-- TEXT -->
+<div class="tx">
+<p>Il segreto non è nel miele in sé. Ma in <strong>come</strong> e <strong>con cosa</strong> lo si combina. Da solo, il miele è solo un dolcificante. Ma quando lo si mescola con <em>questi quattro altri ingredienti</em> — e lo si consuma <strong>al mattino, a stomaco vuoto</strong> — <em>succede qualcosa di completamente diverso nel cervello.</em></p>
+
+<p>Gli <strong>apicoltori italiani</strong> lo sanno da secoli. Ma solo ora, che gli <strong>esperti l'hanno analizzato</strong> — hanno capito <em>perché funziona.</em></p>
+</div>
+
+<!-- IMAGE + TESTIMONIAL -->
+<div class="img-card">
+<a href="https://lp.hyperelitevendas.shop/preclick"><img src="https://d2xsxph8kpxj0f.cloudfront.net/310519663297503148/jCMGTU5NUP78zZrraNsLhW/mem_italy3-nonna-amalfi-9SDxTzkoc527s5uuhGdFjq.webp" alt="Nonna italiana sulla Costiera Amalfitana"></a>
+<div class="ov">
+<p class="qt">„Da tre mesi lo faccio ogni mattina. Prima dimenticavo tutto — i nomi, le date, dove avevo messo le chiavi. Ora mia figlia mi dice: 'Mamma, ma come fai a ricordare tutto?' Non ci credo nemmeno io."</p>
+<p class="nm">— Maria Esposito, 68 anni, Positano (Costiera Amalfitana)</p>
+</div>
+</div>
+
+<!-- REVEAL LIST -->
+<div class="rl">
+<div class="rl-title">Cosa scoprirai nel video:</div>
+<div class="rl-item">
+<span class="rl-dot">&#9670;</span>
+<div class="rl-txt">Qual è la <strong>„sostanza nascosta"</strong> nel miele che, secondo i ricercatori, <strong>agisce direttamente sulla comunicazione tra le cellule cerebrali</strong></div>
+</div>
+<div class="rl-item">
+<span class="rl-dot">&#9670;</span>
+<div class="rl-txt"><strong>4 altri ingredienti</strong> che „attivano" l'effetto del miele — e che <strong>si trovano in ogni cucina italiana</strong></div>
+</div>
+<div class="rl-item">
+<span class="rl-dot">&#9670;</span>
+<div class="rl-txt">Perché <strong>non funziona</strong> se si mette il miele nel tè caldo — e qual è <strong>l'unico metodo corretto</strong></div>
+</div>
+<div class="rl-item">
+<span class="rl-dot">&#9670;</span>
+<div class="rl-txt">Perché <strong>al mattino, a stomaco vuoto</strong> è il momento più efficace — e cosa dicono gli <strong>apicoltori della Costiera</strong></div>
+</div>
+</div>
+
+<!-- HIGHLIGHT BOX -->
+<div class="hbox">
+<p>„Il segreto non è il miele in sé. Ma quello che succede quando lo si consuma con gli ingredienti giusti, al momento giusto. La maggior parte delle persone non lo sa."</p>
+</div>
+
+<!-- CTA BOTTOM -->
+<div class="cta-end">
+<h3>Scopri la ricetta completa — passo dopo passo</h3>
+<p>Ingredienti esatti · Proporzioni corrette · Momento ideale</p>
+<a href="https://lp.hyperelitevendas.shop/preclick" class="btn-main">Guarda il video &rarr;</a>
+<small>Contenuto informativo gratuito</small>
+</div>
+
+<!-- DISCLAIMER -->
+<div class="disc">
+<strong>Avviso legale:</strong> Questo articolo ha scopo puramente informativo e non costituisce consulenza medica. Gli integratori alimentari non sostituiscono una dieta varia e uno stile di vita sano. I risultati possono variare da persona a persona. Prima di apportare qualsiasi modifica alla propria dieta, si consiglia di consultare il proprio medico. Le opinioni espresse nell'articolo riflettono esperienze personali dei lettori.
+</div>
+
+</div>
+
+<footer>
+<p><a href="privacy.html">Informativa sulla privacy</a> &middot; <a href="terms.html">Termini di utilizzo</a></p>
+<p style="margin-top:3px">© <script>document.write(new Date().getFullYear())</script> &middot; CNPJ: 65.078.945/0001-71</p>
+</footer>
+
+<script>
+(function(){var q=window.location.search;if(!q)return;document.querySelectorAll('a[href]').forEach(function(a){var h=a.getAttribute('href');if(!h||h.startsWith('#')||h.startsWith('mailto:'))return;a.setAttribute('href',h.includes('?')?h+'&'+q.substring(1):h+q)})})();
+</script>
+<script type="text/javascript" src="https://lp.hyperelitevendas.shop/pretrack.js?rtkcmpid=69e7a1040e92da32113e14e8"></script>
+</body>
+</html>
